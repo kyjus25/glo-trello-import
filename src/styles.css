@@ -20,6 +20,16 @@ body {
   background-color: #64dd17;
 }
 
+.ui-dropdown {
+  width: 100% !important;
+  color: white !important;
+  background: none !important;
+}
+.ui-dropdown label {
+  color: white !important;
+  background: none !important;
+}
+
 .wrapper {
   max-width: 900px;
   margin: auto;

@@ -12,6 +12,7 @@ import {ButtonModule, CardModule, DropdownModule, InputTextModule, ProgressBarMo
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NavbarComponent} from './shared/navbar/navbar.component';
+import {GloSDKModule} from '@kyjus25/glo-rxjs-sdk';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {NavbarComponent} from './shared/navbar/navbar.component';
     DropdownModule,
     TableModule,
     InputTextModule,
+    GloSDKModule,
     DialogModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes, {useHash: true, paramsInheritanceStrategy: 'always'}),
