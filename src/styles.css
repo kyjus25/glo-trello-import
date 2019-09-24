@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/primeng/resources/themes/omega/theme.css';
+@import '../node_modules/primeng/resources/primeng.min.css';
+@import '../node_modules/primeicons/primeicons.css';
+@import 'https://use.fontawesome.com/releases/v5.7.2/css/all.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+
+body {
+  background-color: #303030;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+.ui-progressbar {
+  margin: 20px 20px;
+}
+.ui-progressbar.ui-progressbar-indeterminate {
+  background-color: #212121;
+}
+.ui-progressbar.ui-progressbar-indeterminate .ui-progressbar-value {
+  background-color: #64dd17;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.bump {
+  margin: 48px 0;
+}
+
+header {
+  background-color: #212121;
+  padding: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+p {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+p a {
+  color: #64dd17 !important;
+  text-decoration: none !important;
+}
+button {
+  background-color: #64dd17 !important;
+  color: #212121 !important;
+  border: none !important;
+}
+
+.ui-float-label {
+  margin: 30px 0;
+  border-bottom: 1px solid grey !important;
+}
+.ui-float-label.true {
+  opacity: 0.3 !important;
+}
+
+input {
+  color: white !important;
+  background: none !important;
+  border: none !important;
+  width: 100% !important
+}
+
+h1 {
+  color: #64dd17;
+  font-size: 20px;
+}
+
+p-card > div {
+  background-color: #212121 !important;
+  border: 1px solid black !important;
+}

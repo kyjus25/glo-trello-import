@@ -1,0 +1,40 @@
+<app-navbar [status]="'logout'"></app-navbar>
+
+<div class="wrapper">
+  <p-progressBar mode="indeterminate" *ngIf="loading"></p-progressBar>
+
+  <div *ngIf="!loading" class="bump"></div>
+
+  <div class="ui-g">
+    <div class="ui-g-6">
+      <p-card>
+        <h1>Trello Credentials</h1>
+        <p>You will need to get your API Key and Token from <a href="https://trello.com/app-key">Trello</a>.</p>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="trelloKey" (ngModelChange)="checkDisable()">
+           <label for="float-input">API Key</label>
+        </span>
+        <span class="ui-float-label">
+           <input id="float-input2" type="text" size="30" pInputText [(ngModel)]="trelloToken" (ngModelChange)="checkDisable()">
+          <label for="float-input2">Token</label>
+        </span>
+        <span class="ui-float-label {{boardDisabled}}">
+           <input id="float-input3" type="text" size="30" pInputText [(ngModel)]="board" [disabled]="boardDisabled" (ngModelChange)="checkDisable()">
+          <label for="float-input3">Board to Import</label>
+        </span>
+      </p-card>
+    </div>
+    <div class="ui-g-6">
+      <p-card>
+        <h1>Glo Credentials</h1>
+        <p>You will need to get your Personal Access Token from <a href="https://app.gitkraken.com/pats">GitKraken</a>.</p>
+        <span class="ui-float-label">
+            <input id="float-input4" type="text" size="30" pInputText [(ngModel)]="gloKey" (ngModelChange)="checkDisable()">
+           <label for="float-input4">Personal Access Token</label>
+        </span>
+        <p-button label="Import Board" [disabled]="submitDisabled"></p-button>
+      </p-card>
+    </div>
+  </div>
+</div>
+
