@@ -32,6 +32,39 @@
         <p-button label="Import Board" [disabled]="submitDisabled" (onClick)="submit()"></p-button>
       </p-card>
     </div>
+
+    <div class="ui-g-12 margin">
+      <p-card>
+        <h1>Details</h1>
+        <blockquote>
+          <h2>Summary</h2>
+          <p>This application will take an existing Trello board and import it into GitKraken Glo! Note that Glo is under active development, and therefore not all parts of a Trello board may be copied 1:1.</p>
+        </blockquote>
+        <blockquote>
+          <h2>One-Time Sync</h2>
+          <p>This application is only a one-time import. This will not sync your items back and forth between Trello and Glo.</p>
+        </blockquote>
+        <blockquote>
+          <h2>Security</h2>
+          <p>We ask for your credentials for both services so that we can make API calls on your behalf, automating the copy process. This application is entirely client side, meaning the only time the credentials leave this page is when they are used to make those API calls.</p>
+        </blockquote>
+        <blockquote>
+          <h2>Copied Items</h2>
+          <ul>
+            <li>Board Name</li>
+            <li>Board Columns</li>
+            <li>Labels</li>
+            <li> Card Name</li>
+            <li>Card Description</li>
+            <li>Card Tasks</li>
+          </ul>
+        </blockquote>
+
+
+
+      </p-card>
+    </div>
   </div>
+
 </div>
 

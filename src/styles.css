@@ -20,6 +20,10 @@ body {
   background-color: #64dd17;
 }
 
+.margin {
+  margin-top: 50px;
+}
+
 .ui-dropdown {
   width: 100% !important;
   color: white !important;
@@ -47,10 +51,15 @@ header {
   font-size: 20px;
 }
 
-p {
+p, li {
   color: white;
   font-weight: 300;
   font-size: 12px;
+}
+
+ul, li {
+  margin: 0;
+  padding-left: 15px;
 }
 p a {
   color: #64dd17 !important;
@@ -80,6 +89,12 @@ input {
 h1 {
   color: #64dd17;
   font-size: 20px;
+}
+
+h2 {
+  color: #64dd17;
+  font-size: 16px;
+  opacity: 0.8;
 }
 
 p-card > div {
